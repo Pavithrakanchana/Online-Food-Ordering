@@ -1,3 +1,22 @@
+<div class="col-md-7">
+  <mat-form-field class="field-full-width mandatory-field" appearance="outline">
+      <mat-label>First Name</mat-label>
+      <input matInput placeholder="First Name" maxlength="15" value="" id="firstname"
+          formControlName="firstname" >
+      <mat-error class="" id="firstnameReq" >
+          First Name is required
+      </mat-error>
+      <mat-error class="" id="firstnamePat">
+          Enter valid First Name
+      </mat-error>
+  </mat-form-field>
+</div>
+<div>
+  <mat-form-field appearance="outline">
+    <mat-label>Outline form field</mat-label>
+    <input matInput placeholder="Placeholder">
+  </mat-form-field>
+</div>
 <div> 
   <button mat-raised-button color="accent" (click)="submit()">
     Admin Page
